@@ -20,3 +20,18 @@ local keypoints = {
 			
 			uigradient.Transparency = transparencySequence
 end
+
+function CreateUIGradient(parent,left,right)
+local uigradient = Instance.new("UIGradient")
+uigradient.Parent = parent
+
+local keypoints = {
+				NumberSequenceKeypoint.new(0, 0.9),
+				NumberSequenceKeypoint.new(0.6, 1),
+                NumberSequenceKeypoint.new(1, 1)
+			}
+		
+			local transparencySequence = NumberSequence.new(keypoints)
+			
+			uigradient.Transparency = transparencySequence
+end
