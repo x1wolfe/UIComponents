@@ -7,8 +7,16 @@ parent.Draggable = true
 end
 
 function CreateUnderLine(parent)
+local uigradient = Instance.new("UIGradient")
+uigradient.Parent = parent
 
-local UnderLine = InsertService:LoadLocalAsset("rbxassetid://14543149742")
-
-UnderLine.Parent = parent
+local keypoints = {
+				NumberSequenceKeypoint.new(0, 1),
+				NumberSequenceKeypoint.new(0.5, 0),
+                NumberSequenceKeypoint.new(1, 1)
+			}
+		
+			local transparencySequence = NumberSequence.new(keypoints)
+			
+			uigradient.Transparency = transparencySequence
 end
