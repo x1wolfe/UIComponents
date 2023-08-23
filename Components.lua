@@ -1,3 +1,5 @@
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Arcadian420/Services/main/lua.lua'))()
+
 function MakeDraggable(parent)
 parent.Active = true
 parent.Archivable = true
