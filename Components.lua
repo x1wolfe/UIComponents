@@ -21,7 +21,7 @@ local keypoints = {
 			uigradient.Transparency = transparencySequence
 end
 
-function CreateUIGradient(parent,left,right)
+function CreateUIGradient(parent)
 local uigradient = Instance.new("UIGradient")
 uigradient.Parent = parent
 
