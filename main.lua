@@ -13,9 +13,7 @@ local keypoints = {
 				NumberSequenceKeypoint.new(0.5, 0),
                 NumberSequenceKeypoint.new(1, 1)
 			}
-		
 			local transparencySequence = NumberSequence.new(keypoints)
-			
 			uigradient.Transparency = transparencySequence
 end
 
@@ -29,7 +27,6 @@ local keypoints = {
                 NumberSequenceKeypoint.new(1, 1)
 			}
 		
-			local transparencySequence = NumberSequence.new(keypoints)
-			
+			local transparencySequence = NumberSequence.new(keypoints)	
 			uigradient.Transparency = transparencySequence
 end
