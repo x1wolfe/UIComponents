@@ -22,7 +22,8 @@ local uigradient = Instance.new("UIGradient")
 uigradient.Parent = parent
 
 local keypoints = {
-				NumberSequenceKeypoint.new(0, 0.9),
+            	NumberSequenceKeypoint.new(0, 1),
+				NumberSequenceKeypoint.new(0.07, 0.9),
 				NumberSequenceKeypoint.new(0.6, 1),
                 NumberSequenceKeypoint.new(1, 1)
 			}
