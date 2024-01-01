@@ -5,13 +5,13 @@ parent.Archivable = true
 parent.Draggable = true
 end
 
-function MakeToggle(ScreenGui)
+function MakeToggle(parent)
     UserInputService.InputBegan:Connect(function(key)
         if key.KeyCode == Enum.KeyCode.Insert then
-            if ScreenGui.Enabled == true then
-                ScreenGui.Enabled = false
+            if parent.Enabled == true then
+                parent.Enabled = false
             else
-                ScreenGui.Enabled = true
+                parent.Enabled = true
             end
         end
     end)
