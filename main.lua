@@ -5,8 +5,16 @@ parent.Archivable = true
 parent.Draggable = true
 end
 
-function MakeToggle(parent)
-    print("asdasdasdasdasdasd")
+function MakeToggle(ScreenGui)
+    UserInputService.InputBegan:Connect(function(key)
+        if key.KeyCode == Enum.KeyCode.Insert then
+            if ScreenGui.Enabled == true then
+                ScreenGui.Enabled = false
+            else
+                ScreenGui.Enabled = true
+            end
+        end
+    end)
 end
 
 function CreateUnderLine(parent)
