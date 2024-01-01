@@ -6,15 +6,7 @@ parent.Draggable = true
 end
 
 function MakeToggle(parent)
-    UserInputService.InputBegan:Connect(function(key)
-        if key.KeyCode == Enum.KeyCode.Insert then
-            if parent.Enabled == true then
-                parent.Enabled = false
-            else
-                parent.Enabled = true
-            end
-        end
-    end)
+    print("asdasdasdasdasdasd")
 end
 
 function CreateUnderLine(parent)
