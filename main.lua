@@ -6,14 +6,15 @@ parent.Draggable = true
 end
 
 function MakeToggle(ScreenGui)
-UserInputService.InputBegan:Connect(function(key)
-	key.KeyCode == Enum.KeyCode.Insert then
-		if ScreenGui.Enabled == true then
-			ScreenGui.Enabled = false
-		else
-			ScreenGui.Enabled = true
-		end
-end)
+    UserInputService.InputBegan:Connect(function(key)
+        if key.KeyCode == Enum.KeyCode.Insert then
+            if ScreenGui.Enabled == true then
+                ScreenGui.Enabled = false
+            else
+                ScreenGui.Enabled = true
+            end
+        end
+    end)
 end
 
 function CreateUnderLine(parent)
