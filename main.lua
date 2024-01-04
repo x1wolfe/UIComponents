@@ -7,7 +7,7 @@ end
 
 function MakeToggle(ScreenGui)
     UserInputService.InputBegan:Connect(function(key)
-        if key.KeyCode == Enum.KeyCode.Insert then
+        if key.KeyCode == Enum.KeyCode.K then
             if ScreenGui.Enabled == true then
                 ScreenGui.Enabled = false
             else
